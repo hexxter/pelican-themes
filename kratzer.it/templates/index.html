@@ -25,7 +25,7 @@
 	-->
             </div>
             <span class="overlay"></span>
-            <div style="background-image: url(theme/img/background.jpg);" class="fullscreen-img"></div>
+            <div style="background-image: url(/theme/img/background.jpg);" class="fullscreen-img"></div>
             
           </li>
         </ul>
@@ -48,8 +48,8 @@
 
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a class="navbar-brand scrollTo" href="#home">
-              <img src="theme/img/logo.png" alt="" width="50" height="50" /> 
+            <a class="navbar-brand " href="{{SITEURL}}/index.html">
+              <img src="/theme/img/logo.png" alt="" width="50" height="50" /> 
               <span class="hidden-xs">{{ SITENAME|e }}</span>
             </a>
           </div>
@@ -61,10 +61,11 @@
             <a href="#" class="btn-fullscreen"><i class="fa fa-external-link"></i></a>
 
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#home" class="scrollTo">Home</a></li>
-              <li><a href="#about" class="scrollTo">About</a></li>
-              <li><a href="#work" class="scrollTo">Work</a></li>
-              <li><a href="impressum.html">IMPRESSUM</a></li>
+	<li><a href="{{SITEURL}}/index.html#home">Home</a></li>
+          <li><a href="{{SITEURL}}/index.html#about">About</a></li>
+          <li><a href="{{SITEURL}}/index.html#work">Work</a></li>
+          <li><a href="{{SITEURL}}/impressum.html">Impressum</a></li>
+
               {% if LINKS %}
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>

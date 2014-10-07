@@ -7,9 +7,9 @@
       </div>
       {% for article in articles %}
         {% if article.link %}
-          <p><a href="{{ article.link }}"><span class="label label-default light">{{article.locale_date}}</span> {{article.title}} <i class="fa fa-external-link" target="_blank"></i></a></p>
+          <p><a href="{{ article.link }}"><span class="label label-default light">{{article.locale_date}}</span> {{article.title}} <i class="fa fa-external-link" target="_blank"></i></a>{{article.summary}}</p>
         {%else%}
-          <p><a href="{{ SITEURL }}/{{ article.url }}"><span class="label label-default light">{{article.locale_date}}</span> {{article.title}}</a></p>
+          <p><a href="{{ SITEURL }}/{{ article.url }}"><span class="label label-default light">{{article.locale_date}}</span> {{article.title}}</a>{{article.summary}}</p>
         {%endif%}
       {% endfor %}
   </div>
